@@ -20,7 +20,8 @@ gulp.task('connect', function () {
 
       return [
         require('connect-livereload')({ port: livereloadPort }),
-        mountFolder(connect, 'app')
+        mountFolder(connect, 'node_modules/traceur/bin'),
+        mountFolder(connect, 'app'),
       ];
     }
   });
@@ -51,7 +52,7 @@ gulp.task('compile', function () {
 });
 
 gulp.task('open', ['connect'], function () {
-  require('open')('http://localhost:9421');
+  require('open')('http://localhost:8080');
 });
 
 gulp.task('serve', function () {
