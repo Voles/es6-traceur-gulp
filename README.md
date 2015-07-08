@@ -11,18 +11,16 @@ An experiment with ES6, Traceur and Gulp
 ####Dependencies
 
 * [Gulp](http://gulpjs.com/)
-* [Bower](http://bower.io/)
 
 ## Environment setup
-####1. Install Gulp and Bower
+####1. Install Gulp
 
-    $ sudo npm install -g gulp bower
+    $ sudo npm install -g gulp
 
 ####2. Install project dependencies
-Run the commands below in the project root directory.
+Run the command below in the project root directory.
 
     $ npm install
-    $ bower install
 
 ## Build instructions
 To run the application server, run `$ gulp serve` inside the project directory.
