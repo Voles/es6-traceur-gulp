@@ -6,20 +6,19 @@ var text = '你好吗？';
 console.log(text);
 
 var helloWorld = 'Hello, World!';
-console.log(helloWorld.startsWith('H'));
+console.log(helloWorld.startsWith('H')); // returns true
 
 var a = 'Jo';
-console.log(a.endsWith('O')); // case sensitive
+console.log(a.endsWith('O')); // returns false (case sensitive)
 
-// search for text
 var gangstaIpsum = 'Lorizzle ipsum dolizzle sizzle dawg, we gonna chung owned elizzle.';
 console.log(gangstaIpsum.includes('ipsum'));
 
 // repeat
 var theWord = 'secret';
-console.log(theWord.repeat(2));
+console.log(theWord.repeat(2)); // returns `secretsecret`
 
-// The variable value is declared using let instead of var. That means the declaration is not hoisted to the top,
+// the variable value is declared using let instead of var, which means the declaration is not hoisted to the top
 for (let i = 3;i>=1;i--) {
   console.log('Loop ' + i);
 }
